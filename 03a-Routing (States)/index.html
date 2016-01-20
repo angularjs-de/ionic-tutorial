@@ -1,0 +1,19 @@
+<html ng-app="pizzaApp" strict-di>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Pizza-App</title>
+
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/orderCtrl.js"></script>
+  </head>
+
+  <body>
+    <a ui-sref="order" ui-sref-active="active">Start</a>
+    <a ui-sref="about" ui-sref-active="active">Über Uns</a>
+    <ui-view></ui-view>
+  </body>
+</html>
