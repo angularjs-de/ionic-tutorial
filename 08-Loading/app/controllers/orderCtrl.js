@@ -18,7 +18,7 @@ angular
                 .finally(function () {
                     $timeout(function () {
                         $scope.loading = false;
-                    }, 500);
+                    }, 2000);
                 });
 
             $scope.addToCart = function (pizza) {
