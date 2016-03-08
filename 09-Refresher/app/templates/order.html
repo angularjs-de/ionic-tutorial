@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-nav-title class="title">Pizza App</ion-nav-title>
+    <ion-content padding="true">
+        <div ng-show="loading" class="text-center padding">
+            <ion-spinner></ion-spinner>
+        </div>
+        <ion-refresher
+            pulling-text="aktualisieren..."
+            on-refresh="refresh()">
+        </ion-refresher>
+        <div class="list" ng-show="!loading">
+            <div class="item item-divider">
+                Angebot
+            </div>
+            <div class="item item-button-right" ng-repeat="pizza in pizzas">
+                {{pizza.name}} {{pizza.price}}
+                <button class="button button-balanced icon ion-ios-cart" ng-click="addToCart(pizza)"></button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
